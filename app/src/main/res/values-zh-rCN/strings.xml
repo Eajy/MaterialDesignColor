@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Color</string>
+    <string name="app_full_name">Material Design Color</string>
+    <string name="app_designed_by">Designed by Eajy in China</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_explain">说明</string>
+    <string name="nav_website">Material Color 网站</string>
+    <string name="nav_my_apps">我的应用</string>
+    <string name="nav_md">Material Design Demo</string>
+    <string name="nav_group_about">关于</string>
+    <string name="nav_about_this">关于这个</string>
+    <string name="nav_feedback">反馈</string>
+    <string name="main_feedback_email">反馈:MaterialDesignColor</string>
+    <string name="main_not_found_email">没有邮件程序</string>
+    <string name="guide_swipe">Swipe to see more</string>
+
+    <!-- String related to Explain -->
+    <string name="explain_color">Color</string>
+    <string name="explain_color_details">Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights.</string>
+    <string name="explain_color_palette">Color Palette</string>
+    <string name="explain_color_palette_details">This color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors.
+        They’ve been designed to work harmoniously with each other. The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS.
+        Google suggests using the 500 colors as the primary colors in your app and the other colors as accents colors.\n\nThemes enable consistent app styling through surface shades, shadow depth, and ink opacity.</string>
+    <string name="explain_btn">Google Material Color 网站</string>
+
+    <!-- String related to About -->
+    <string name="title_activity_about">关于这个</string>
+    <string name="about_version">版本: </string>
+    <string name="about_email_intent">关于:MaterialDesignColor</string>
+    <string name="about_not_found_email">没有邮件程序</string>
+    <string name="about_card1_message">嗨！很高兴见到你，感谢你使用这款App！</string>
+    <string name="about_card2_title">如果你喜欢这个Demo，欢迎和我联系！</string>
+    <string name="about_google_play">评价 (Google play)</string>
+    <string name="about_email">反馈 (E-mail)</string>
+    <string name="about_git_hub">源代码 (GitHub)</string>
+    <string name="about_address">Beijing, China</string>
+
+</resources>
