@@ -11,8 +11,9 @@
     <string name="nav_my_apps">我的应用</string>
     <string name="nav_md">Material Design Demo</string>
     <string name="nav_group_about">关于</string>
-    <string name="nav_about_this">关于这个</string>
+    <string name="nav_about_this">关于我</string>
     <string name="nav_feedback">反馈</string>
+    <string name="nav_donate">捐赠</string>
     <string name="main_feedback_email">反馈:MaterialDesignColor</string>
     <string name="main_not_found_email">没有邮件程序</string>
     <string name="guide_swipe">Swipe to see more</string>
@@ -27,7 +28,7 @@
     <string name="explain_btn">Google Material Color 网站</string>
 
     <!-- String related to About -->
-    <string name="title_activity_about">关于这个</string>
+    <string name="title_activity_about">关于我</string>
     <string name="about_version">版本: </string>
     <string name="about_email_intent">关于:MaterialDesignColor</string>
     <string name="about_not_found_email">没有邮件程序</string>
@@ -37,5 +38,13 @@
     <string name="about_email">反馈 (E-mail)</string>
     <string name="about_git_hub">源代码 (GitHub)</string>
     <string name="about_address">Beijing, China</string>
+
+    <!-- String related to About -->
+    <string name="activity_donate">捐赠</string>
+    <string name="donate_title">如果您能够捐赠我，我将非常感谢！</string>
+    <string name="donate_title_after">非常感谢您的捐赠！</string>
+    <string name="donate_low">1.99 美元</string>
+    <string name="donate_high">9.99 美元</string>
+    <string name="donate_exception">抱歉，无法操作！</string>
 
 </resources>

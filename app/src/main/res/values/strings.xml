@@ -6,13 +6,14 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="nav_explain">Explain</string>
+    <string name="nav_explain">About Color</string>
     <string name="nav_website">Material Color Website</string>
     <string name="nav_my_apps">My Apps</string>
     <string name="nav_md">Material Design Demo</string>
     <string name="nav_group_about">About</string>
-    <string name="nav_about_this">About This</string>
+    <string name="nav_about_this">About Me</string>
     <string name="nav_feedback">Feedback</string>
+    <string name="nav_donate">Donate</string>
     <string name="main_feedback_email">Feedback:MaterialDesignColor</string>
     <string name="main_not_found_email">Not found email app</string>
     <string name="guide_swipe">Swipe to see more</string>
@@ -27,7 +28,7 @@
     <string name="explain_btn">Google Material Color Website</string>
 
     <!-- String related to About -->
-    <string name="title_activity_about">About This</string>
+    <string name="title_activity_about">About Me</string>
     <string name="about_version">Version: </string>
     <string name="about_email_intent">About:MaterialDesignColor</string>
     <string name="about_not_found_email">Not found email app</string>
@@ -37,4 +38,13 @@
     <string name="about_email">Feedback by E-mail</string>
     <string name="about_git_hub">Source code on GitHub</string>
     <string name="about_address">Beijing, China</string>
+
+    <!-- String related to About -->
+    <string name="activity_donate">Donate</string>
+    <string name="donate_title">I Would Be Very Grateful If You Could Donate Me ! </string>
+    <string name="donate_title_after">Thanks For Your Donation, I Am Very Grateful ! </string>
+    <string name="donate_low">1.99 USD</string>
+    <string name="donate_high">9.99 USD</string>
+    <string name="donate_exception">Sorry, can not do this!</string>
+
 </resources>
