@@ -1,9 +1,13 @@
 package com.eajy.materialdesigncolor.activity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -44,7 +48,6 @@ public class WebActivity extends AppCompatActivity {
         mWebView.getSettings().setJavaScriptEnabled(true);
 
         mWebView.setWebViewClient(new WebViewClient() {
-
         });
 
         mWebView.setWebChromeClient(new WebChromeClient() {
@@ -78,6 +81,25 @@ public class WebActivity extends AppCompatActivity {
         });
 
         mWebView.loadUrl(url);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_web_view, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_web_view:
+                Intent intent = new Intent();
+                intent.setData(Uri.parse(Constant.GOOGLE_COLOR_WEBSITE));
+                intent.setAction(Intent.ACTION_VIEW);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
 

@@ -6,6 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -71,11 +74,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
+        private View mView;
         private RelativeLayout relative_item;
         private TextView tv_recycler_name, tv_recycler_value;
 
         private RecyclerViewHolder(View itemView) {
             super(itemView);
+            mView = itemView;
             relative_item = (RelativeLayout) itemView.findViewById(R.id.relative_item);
             tv_recycler_name = (TextView) itemView.findViewById(R.id.tv_recycler_name);
             tv_recycler_value = (TextView) itemView.findViewById(R.id.tv_recycler_value);
