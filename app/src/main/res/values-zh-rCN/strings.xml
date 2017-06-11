@@ -16,7 +16,12 @@
     <string name="nav_donate">捐赠</string>
     <string name="main_feedback_email">反馈:MaterialDesignColor</string>
     <string name="main_not_found_email">没有邮件程序</string>
-    <string name="guide_swipe">Swipe to see more</string>
+    <string name="guide_swipe">滑动查看更多</string>
+
+    <string name="copy_before">已复制 \"</string>
+    <string name="copy_after">\" 到剪贴板</string>
+    <string name="copy_guide">长按以复制色值到剪贴板</string>
+    <string name="copy_ok">确定</string>
 
     <!-- String related to Explain -->
     <string name="explain_color">Color</string>
@@ -32,14 +37,15 @@
     <string name="about_version">版本: </string>
     <string name="about_email_intent">关于:MaterialDesignColor</string>
     <string name="about_not_found_email">没有邮件程序</string>
-    <string name="about_card1_message">嗨！很高兴见到你，感谢你使用这款App！</string>
+    <string name="about_card1_message">嗨！很高兴见到你！</string>
     <string name="about_card2_title">如果你喜欢这个Demo，欢迎和我联系！</string>
     <string name="about_google_play">评价 (Google play)</string>
     <string name="about_email">反馈 (E-mail)</string>
     <string name="about_git_hub">源代码 (GitHub)</string>
     <string name="about_address">Beijing, China</string>
+    <string name="web_view_menu">在浏览器中打开</string>
 
-    <!-- String related to About -->
+    <!-- String related to Donate -->
     <string name="activity_donate">捐赠</string>
     <string name="donate_title">如果您能够捐赠我，我将非常感谢！</string>
     <string name="donate_title_after">非常感谢您的捐赠！</string>
@@ -47,4 +53,8 @@
     <string name="donate_high">9.99 美元</string>
     <string name="donate_exception">抱歉，无法操作！</string>
 
+    <!-- String related to Ad -->
+    <string name="banner_ad_loading">广告加载中 …</string>
+    <string name="banner_ad_title_donate">或者你可以点击下面的广告支持我，谢谢！</string>
+    <string name="banner_ad_unit_id_donate">ca-app-pub-1251484082745159/7804400621</string>
 </resources>

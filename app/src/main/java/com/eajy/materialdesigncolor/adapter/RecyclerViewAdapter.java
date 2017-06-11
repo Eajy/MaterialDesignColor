@@ -1,7 +1,9 @@
 package com.eajy.materialdesigncolor.adapter;
 
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.graphics.Color;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +44,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
+    public void onBindViewHolder(final RecyclerViewHolder holder, final int position) {
         holder.setIsRecyclable(false);
 
         holder.relative_item.setBackgroundColor(Color.parseColor(colorValues[position]));
@@ -63,6 +65,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             lp.setMargins(0, 12, 0, 0);
             holder.relative_item.setLayoutParams(lp);
         }
+
+        holder.mView.setLongClickable(true);
+        holder.mView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                ClipboardManager cmb = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+                cmb.setText(colorValues[position]);
+                Snackbar.make(holder.mView, context.getString(R.string.copy_before) + colorValues[position] + context.getString(R.string.copy_after),
+                        Snackbar.LENGTH_SHORT).show();
+                return true;
+            }
+        });
 
     }
 

@@ -18,6 +18,11 @@
     <string name="main_not_found_email">Not found email app</string>
     <string name="guide_swipe">Swipe to see more</string>
 
+    <string name="copy_before">Copied \"</string>
+    <string name="copy_after">\" to clipboard</string>
+    <string name="copy_guide">Long press to copy the color value to the clipboard</string>
+    <string name="copy_ok">Got it</string>
+
     <!-- String related to Explain -->
     <string name="explain_color">Color</string>
     <string name="explain_color_details">Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights.</string>
@@ -32,19 +37,25 @@
     <string name="about_version">Version: </string>
     <string name="about_email_intent">About:MaterialDesignColor</string>
     <string name="about_not_found_email">Not found email app</string>
-    <string name="about_card1_message">Hey, glad to see you! Thanks for using the app.</string>
+    <string name="about_card1_message">Hey, glad to see you!</string>
     <string name="about_card2_title">If you liked the app, feel free to contact me.</string>
     <string name="about_google_play">Rate on Google play</string>
     <string name="about_email">Feedback by E-mail</string>
     <string name="about_git_hub">Source code on GitHub</string>
     <string name="about_address">Beijing, China</string>
+    <string name="web_view_menu">Open in browser</string>
 
-    <!-- String related to About -->
+    <!-- String related to Donate -->
     <string name="activity_donate">Donate</string>
     <string name="donate_title">I Would Be Very Grateful If You Could Donate Me ! </string>
     <string name="donate_title_after">Thanks For Your Donation, I Am Very Grateful ! </string>
     <string name="donate_low">1.99 USD</string>
     <string name="donate_high">9.99 USD</string>
     <string name="donate_exception">Sorry, can not do this!</string>
+
+    <!-- String related to Ad -->
+    <string name="banner_ad_loading">Ads loading …</string>
+    <string name="banner_ad_title_donate">Or you could click this ad for support me. Thank you!</string>
+    <string name="banner_ad_unit_id_donate">ca-app-pub-1251484082745159/7804400621</string>
 
 </resources>

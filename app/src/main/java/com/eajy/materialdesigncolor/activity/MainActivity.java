@@ -1,6 +1,7 @@
 package com.eajy.materialdesigncolor.activity;
 
 import android.content.ComponentName;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -8,6 +9,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -269,10 +271,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             GuideDialog guideDialog = new GuideDialog(MainActivity.this, R.style.DialogFullscreen);
             guideDialog.show();
 
+            showSnackBar();
+
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("isFirst", false);
             editor.apply();
         }
+    }
+
+    public void showSnackBar() {
+        Snackbar.make(view_pager_main, getString(R.string.copy_guide), Snackbar.LENGTH_INDEFINITE)
+                .setAction(getString(R.string.copy_ok), new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                })
+                .setActionTextColor(getResources().getColor(R.color.app_yellow))
+                .show();
     }
 
     private boolean checkAppInstalled(String packageName) {
