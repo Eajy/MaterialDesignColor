@@ -30,7 +30,7 @@
     <string name="explain_color_palette_details">This color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors.
         They’ve been designed to work harmoniously with each other. The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS.
         Google suggests using the 500 colors as the primary colors in your app and the other colors as accents colors.\n\nThemes enable consistent app styling through surface shades, shadow depth, and ink opacity.</string>
-    <string name="explain_btn">Google Material Color 网站</string>
+    <string name="explain_btn">Material Color 网站</string>
 
     <!-- String related to About -->
     <string name="title_activity_about">关于我</string>
@@ -55,6 +55,5 @@
 
     <!-- String related to Ad -->
     <string name="banner_ad_loading">广告加载中 …</string>
-    <string name="banner_ad_title_donate">或者你可以点击下面的广告支持我，谢谢！</string>
     <string name="banner_ad_unit_id_donate">ca-app-pub-1251484082745159/7804400621</string>
 </resources>

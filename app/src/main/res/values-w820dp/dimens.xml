@@ -1,11 +1,19 @@
 <resources>
 
-    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_horizontal_margin">128dp</dimen>
 
-    <dimen name="main_card_margin_horizontal">64dp</dimen>
+    <dimen name="main_card_margin_horizontal">128dp</dimen>
 
-    <dimen name="zero_horizontal_margin">48dp</dimen>
+    <dimen name="zero_horizontal_margin">112dp</dimen>
 
     <dimen name="start_page_image_size">256dp</dimen>
+
+    <dimen name="text_explain">17sp</dimen>
+
+    <dimen name="text_line_spacing_extra">6dp</dimen>
+
+    <dimen name="fragment_header_height">192dp</dimen>
+
+    <dimen name="text_margin_recycler_item">28dp</dimen>
 
 </resources>

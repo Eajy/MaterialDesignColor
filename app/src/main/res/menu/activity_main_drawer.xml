@@ -4,11 +4,11 @@
     <group android:checkableBehavior="none">
         <item
             android:id="@+id/nav_explain"
-            android:icon="@mipmap/ic_content_paste_black_24dp"
+            android:icon="@drawable/ic_content_paste_black_24dp"
             android:title="@string/nav_explain" />
         <item
             android:id="@+id/nav_website"
-            android:icon="@mipmap/ic_public_black_24dp"
+            android:icon="@drawable/ic_public_black_24dp"
             android:title="@string/nav_website" />
     </group>
 
@@ -20,7 +20,7 @@
                 android:title="@string/nav_about_this" />
             <item
                 android:id="@+id/nav_donate"
-                android:icon="@mipmap/ic_attach_money_black_24dp"
+                android:icon="@drawable/ic_attach_money_black_24dp"
                 android:title="@string/nav_donate" />
         </menu>
     </item>
@@ -29,7 +29,7 @@
         <menu>
             <item
                 android:id="@+id/nav_md"
-                android:icon="@mipmap/material_design_demo"
+                android:icon="@drawable/material_design_demo"
                 android:title="@string/nav_md" />
         </menu>
     </item>
