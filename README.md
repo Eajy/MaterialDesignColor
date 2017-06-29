@@ -13,11 +13,13 @@ https://material.io/guidelines/style/color.html#
 https://play.google.com/store/apps/details?id=com.eajy.materialdesigncolor
 
 
-![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/Screenshot_20170420-151700.png)
-![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/Screenshot_20170420-151533.png)
+![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/1.png)
+![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/2.png)
 
-![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/Screenshot_20170420-151738.png)
-![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/Screenshot_20170420-151949.png)
+![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/3.png)
+![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/4.png)
+
+![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/pad_1.png)
 
 
 _**- Designed by Eajy in China.**_
