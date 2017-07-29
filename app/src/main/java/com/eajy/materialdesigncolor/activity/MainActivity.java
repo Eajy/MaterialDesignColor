@@ -1,7 +1,5 @@
 package com.eajy.materialdesigncolor.activity;
 
-import android.content.ComponentName;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -24,7 +22,6 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.eajy.materialdesigncolor.Constant;
 import com.eajy.materialdesigncolor.R;
@@ -38,6 +35,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
+    private NavigationView navigationView;
     private ImageView img_main_toggle;
     private ViewPager view_pager_main;
     private RelativeLayout relative_main;
@@ -54,8 +52,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(Color.argb(33, 0, 0, 0));
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setItemIconTintList(null);
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         img_main_toggle = (ImageView) findViewById(R.id.img_main_toggle);
@@ -163,6 +162,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 } else {
                     img_main_toggle.setImageTintList(ColorStateList.valueOf(Color.BLACK));
                 }
+
+                navigationView.getMenu().getItem(position).setChecked(true);
             }
 
             @Override
@@ -185,13 +186,69 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Intent intent = new Intent();
-
         switch (item.getItemId()) {
+            case R.id.nav_red:
+                view_pager_main.setCurrentItem(0);
+                break;
+            case R.id.nav_pink:
+                view_pager_main.setCurrentItem(1);
+                break;
+            case R.id.nav_purple:
+                view_pager_main.setCurrentItem(2);
+                break;
+            case R.id.nav_deep_purple:
+                view_pager_main.setCurrentItem(3);
+                break;
+            case R.id.nav_indigo:
+                view_pager_main.setCurrentItem(4);
+                break;
+            case R.id.nav_blue:
+                view_pager_main.setCurrentItem(5);
+                break;
+            case R.id.nav_light_blue:
+                view_pager_main.setCurrentItem(6);
+                break;
+            case R.id.nav_cyan:
+                view_pager_main.setCurrentItem(7);
+                break;
+            case R.id.nav_teal:
+                view_pager_main.setCurrentItem(8);
+                break;
+            case R.id.nav_green:
+                view_pager_main.setCurrentItem(9);
+                break;
+            case R.id.nav_light_green:
+                view_pager_main.setCurrentItem(10);
+                break;
+            case R.id.nav_lime:
+                view_pager_main.setCurrentItem(11);
+                break;
+            case R.id.nav_yellow:
+                view_pager_main.setCurrentItem(12);
+                break;
+            case R.id.nav_amber:
+                view_pager_main.setCurrentItem(13);
+                break;
+            case R.id.nav_orange:
+                view_pager_main.setCurrentItem(14);
+                break;
+            case R.id.nav_deep_orange:
+                view_pager_main.setCurrentItem(15);
+                break;
+            case R.id.nav_brown:
+                view_pager_main.setCurrentItem(16);
+                break;
+            case R.id.nav_grey:
+                view_pager_main.setCurrentItem(17);
+                break;
+            case R.id.nav_blue_grey:
+                view_pager_main.setCurrentItem(18);
+                break;
+
             case R.id.nav_explain:
                 intent.setClass(MainActivity.this, ExplainActivity.class);
                 startActivity(intent);
                 break;
-
             case R.id.nav_website:
                 intent.setClass(MainActivity.this, WebActivity.class);
                 startActivity(intent);
@@ -201,7 +258,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent.setClass(this, AboutActivity.class);
                 startActivity(intent);
                 break;
-
             case R.id.nav_donate:
                 intent.setClass(this, DonateActivity.class);
                 startActivity(intent);

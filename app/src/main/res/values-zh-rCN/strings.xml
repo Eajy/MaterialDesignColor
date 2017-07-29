@@ -10,13 +10,31 @@
     <string name="nav_website">Material Color 网站</string>
     <string name="nav_my_apps">我的应用</string>
     <string name="nav_md">Material Design Demo</string>
-    <string name="nav_group_about">关于</string>
-    <string name="nav_about_this">关于我</string>
-    <string name="nav_feedback">反馈</string>
+    <string name="nav_about">关于</string>
     <string name="nav_donate">捐赠</string>
     <string name="main_feedback_email">反馈:MaterialDesignColor</string>
     <string name="main_not_found_email">没有邮件程序</string>
     <string name="guide_swipe">滑动查看更多</string>
+
+    <string name="nav_red">红色</string>
+    <string name="nav_pink">粉红色</string>
+    <string name="nav_purple">紫色</string>
+    <string name="nav_deep_purple">深紫色</string>
+    <string name="nav_indigo">靛青色</string>
+    <string name="nav_blue">蓝色</string>
+    <string name="nav_light_blue">浅蓝色</string>
+    <string name="nav_cyan">青色</string>
+    <string name="nav_teal">深青色</string>
+    <string name="nav_green">绿色</string>
+    <string name="nav_light_green">浅绿色</string>
+    <string name="nav_lime">青柠色</string>
+    <string name="nav_yellow">黄色</string>
+    <string name="nav_amber">琥珀色</string>
+    <string name="nav_orange">橙色</string>
+    <string name="nav_deep_orange">深橙色</string>
+    <string name="nav_brown">棕色</string>
+    <string name="nav_grey">灰色</string>
+    <string name="nav_blue_grey">蓝灰色</string>
 
     <string name="copy_before">已复制 \"</string>
     <string name="copy_after">\" 到剪贴板</string>
@@ -44,9 +62,12 @@
     <string name="about_git_hub">源代码 (GitHub)</string>
     <string name="about_address">Beijing, China</string>
     <string name="web_view_menu">在浏览器中打开</string>
+    <string name="share_with">分享方式</string>
 
     <!-- String related to Donate -->
     <string name="activity_donate">捐赠</string>
+    <string name="donate">捐赠</string>
+    <string name="donated">已捐赠</string>
     <string name="donate_title">如果您能够捐赠我，我将非常感谢！</string>
     <string name="donate_title_after">非常感谢您的捐赠！</string>
     <string name="donate_low">1.99 美元</string>

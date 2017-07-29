@@ -1,3 +1,9 @@
+**Update log:**  
+V1.8:  
+Greatly optimized the display on the tablet.  
+V1.9:  
+Added color items in navigation view to switch color pages faster.  
+
 **Color**  
 
 Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights.

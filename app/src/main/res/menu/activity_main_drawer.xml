@@ -1,7 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="none">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_red"
+            android:checked="true"
+            android:icon="@drawable/ic_lens_red_500_24dp"
+            android:title="@string/nav_red" />
+        <item
+            android:id="@+id/nav_pink"
+            android:icon="@drawable/ic_lens_pink_500_24dp"
+            android:title="@string/nav_pink" />
+        <item
+            android:id="@+id/nav_purple"
+            android:icon="@drawable/ic_lens_purple_500_24dp"
+            android:title="@string/nav_purple" />
+        <item
+            android:id="@+id/nav_deep_purple"
+            android:icon="@drawable/ic_lens_deep_purple_500_24dp"
+            android:title="@string/nav_deep_purple" />
+        <item
+            android:id="@+id/nav_indigo"
+            android:icon="@drawable/ic_lens_indigo_500_24dp"
+            android:title="@string/nav_indigo" />
+        <item
+            android:id="@+id/nav_blue"
+            android:icon="@drawable/ic_lens_blue_500_24dp"
+            android:title="@string/nav_blue" />
+        <item
+            android:id="@+id/nav_light_blue"
+            android:icon="@drawable/ic_lens_light_blue_500_24dp"
+            android:title="@string/nav_light_blue" />
+        <item
+            android:id="@+id/nav_cyan"
+            android:icon="@drawable/ic_lens_cyan_500_24dp"
+            android:title="@string/nav_cyan" />
+        <item
+            android:id="@+id/nav_teal"
+            android:icon="@drawable/ic_lens_teal_500_24dp"
+            android:title="@string/nav_teal" />
+        <item
+            android:id="@+id/nav_green"
+            android:icon="@drawable/ic_lens_green_500_24dp"
+            android:title="@string/nav_green" />
+        <item
+            android:id="@+id/nav_light_green"
+            android:icon="@drawable/ic_lens_light_green_500_24dp"
+            android:title="@string/nav_light_green" />
+        <item
+            android:id="@+id/nav_lime"
+            android:icon="@drawable/ic_lens_lime_500_24dp"
+            android:title="@string/nav_lime" />
+        <item
+            android:id="@+id/nav_yellow"
+            android:icon="@drawable/ic_lens_yellow_500_24dp"
+            android:title="@string/nav_yellow" />
+        <item
+            android:id="@+id/nav_amber"
+            android:icon="@drawable/ic_lens_amber_500_24dp"
+            android:title="@string/nav_amber" />
+        <item
+            android:id="@+id/nav_orange"
+            android:icon="@drawable/ic_lens_orange_500_24dp"
+            android:title="@string/nav_orange" />
+        <item
+            android:id="@+id/nav_deep_orange"
+            android:icon="@drawable/ic_lens_deep_orange_500_24dp"
+            android:title="@string/nav_deep_orange" />
+        <item
+            android:id="@+id/nav_brown"
+            android:icon="@drawable/ic_lens_brown_500_24dp"
+            android:title="@string/nav_brown" />
+        <item
+            android:id="@+id/nav_grey"
+            android:icon="@drawable/ic_lens_grey_500_24dp"
+            android:title="@string/nav_grey" />
+        <item
+            android:id="@+id/nav_blue_grey"
+            android:icon="@drawable/ic_lens_blue_grey_500_24dp"
+            android:title="@string/nav_blue_grey" />
+    </group>
+
+    <group android:id="@+id/group_web">
         <item
             android:id="@+id/nav_explain"
             android:icon="@drawable/ic_content_paste_black_24dp"
@@ -12,18 +92,16 @@
             android:title="@string/nav_website" />
     </group>
 
-    <item android:title="@string/nav_group_about">
-        <menu>
-            <item
-                android:id="@+id/nav_about"
-                android:icon="@drawable/ic_info_black_24dp"
-                android:title="@string/nav_about_this" />
-            <item
-                android:id="@+id/nav_donate"
-                android:icon="@drawable/ic_attach_money_black_24dp"
-                android:title="@string/nav_donate" />
-        </menu>
-    </item>
+    <group android:id="@+id/group_about">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/nav_about" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="@string/nav_donate" />
+    </group>
 
     <item android:title="@string/nav_my_apps">
         <menu>
