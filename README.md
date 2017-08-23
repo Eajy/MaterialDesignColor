@@ -1,4 +1,4 @@
-**Update log:**  
+**Update logs:**  
 V1.8:  
 Greatly optimized the display on the tablet.  
 V1.9:  
