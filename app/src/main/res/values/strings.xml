@@ -51,7 +51,7 @@
     <string name="explain_btn">Material Color Website</string>
 
     <!-- String related to About -->
-    <string name="title_activity_about">About Me</string>
+    <string name="title_activity_about">About</string>
     <string name="about_version">Version: </string>
     <string name="about_email_intent">About:MaterialDesignColor</string>
     <string name="about_not_found_email">Not found email app</string>
@@ -62,7 +62,9 @@
     <string name="about_git_hub">Source code on GitHub</string>
     <string name="about_address">Beijing, China</string>
     <string name="web_view_menu">Open in browser</string>
+    <string name="about_source_licenses">Open source licenses</string>
     <string name="share_with">Share with</string>
+    <string name="dialog_close">Close</string>
 
     <!-- String related to Donate -->
     <string name="activity_donate">Donations</string>

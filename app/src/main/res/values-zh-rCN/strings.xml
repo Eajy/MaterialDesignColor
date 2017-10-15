@@ -51,7 +51,7 @@
     <string name="explain_btn">Material Color 网站</string>
 
     <!-- String related to About -->
-    <string name="title_activity_about">关于我</string>
+    <string name="title_activity_about">关于</string>
     <string name="about_version">版本: </string>
     <string name="about_email_intent">关于:MaterialDesignColor</string>
     <string name="about_not_found_email">没有邮件程序</string>
@@ -62,7 +62,9 @@
     <string name="about_git_hub">源代码 (GitHub)</string>
     <string name="about_address">Beijing, China</string>
     <string name="web_view_menu">在浏览器中打开</string>
+    <string name="about_source_licenses">开源许可</string>
     <string name="share_with">分享方式</string>
+    <string name="dialog_close">关闭</string>
 
     <!-- String related to Donate -->
     <string name="activity_donate">捐赠</string>

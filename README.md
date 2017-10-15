@@ -1,8 +1,14 @@
-**Update logs:**  
-V1.8:  
+#### Update logs:  
+V 1.8:  
 Greatly optimized the display on the tablet.  
-V1.9:  
+
+V 1.9:  
 Added color items in navigation view to switch color pages faster.  
+
+V 2.0:   
+Added Open Source Licenses.  
+
+---  
 
 **Color**  
 
@@ -18,7 +24,6 @@ https://material.io/guidelines/style/color.html#
 **Google Play:**  
 https://play.google.com/store/apps/details?id=com.eajy.materialdesigncolor
 
-
 ![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/1.png)
 ![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/2.png)
 
@@ -26,6 +31,26 @@ https://play.google.com/store/apps/details?id=com.eajy.materialdesigncolor
 ![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/4.png)
 
 ![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/pad_1.png)
+  
+---  
 
-
+#### Open Source Licenses:  
+    The product includes:  
+      
+    Apache License, Version 2.0  
+    You may obtain a copy of the license at  
+    http://www.apache.org/licenses/LICENSE-2.0  
+      
+    Android Support Library  
+    Copyright © 2005 The Android Open Source Project. All rights reserved. 
+    http://developer.android.com/tools/extras/support-library.html    
+      
+    Google Material Design Icons  
+    Copyright © Google, Inc. All rights reserved.  
+    https://material.io/icons/
+      
+    Google Material Design Guidelines  
+    Copyright © Google, Inc. All rights reserved.  
+    https://material.io/guidelines/
+  
 _**- Designed by Eajy in China.**_

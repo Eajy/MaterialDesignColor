@@ -1,5 +1,6 @@
 package com.eajy.materialdesigncolor.activity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -12,6 +13,9 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -39,21 +43,22 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void initView() {
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_about_card_show);
+        ScrollView scroll_about = (ScrollView) findViewById(R.id.scroll_about);
+        scroll_about.startAnimation(animation);
+
         LinearLayout ll_card_about_2_shop = (LinearLayout) findViewById(R.id.ll_card_about_2_shop);
         LinearLayout ll_card_about_2_email = (LinearLayout) findViewById(R.id.ll_card_about_2_email);
         LinearLayout ll_card_about_2_git_hub = (LinearLayout) findViewById(R.id.ll_card_about_2_git_hub);
-        ScrollView scroll_about = (ScrollView) findViewById(R.id.scroll_about);
-
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_about_card_show);
-        scroll_about.startAnimation(animation);
+        LinearLayout ll_card_about_source_licenses = (LinearLayout) findViewById(R.id.ll_card_about_source_licenses);
+        ll_card_about_2_shop.setOnClickListener(this);
+        ll_card_about_2_email.setOnClickListener(this);
+        ll_card_about_2_git_hub.setOnClickListener(this);
+        ll_card_about_source_licenses.setOnClickListener(this);
 
         AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f, 1.0f);
         alphaAnimation.setDuration(300);
         alphaAnimation.setStartOffset(600);
-
-        ll_card_about_2_shop.setOnClickListener(this);
-        ll_card_about_2_email.setOnClickListener(this);
-        ll_card_about_2_git_hub.setOnClickListener(this);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_about_share);
         fab.setOnClickListener(this);
@@ -90,6 +95,25 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 intent.setData(Uri.parse(Constant.GIT_HUB));
                 intent.setAction(Intent.ACTION_VIEW);
                 startActivity(intent);
+                break;
+
+            case R.id.ll_card_about_source_licenses:
+                final Dialog dialog = new Dialog(this, R.style.DialogFullscreenWithTitle);
+                dialog.setTitle(getString(R.string.about_source_licenses));
+                dialog.setContentView(R.layout.dialog_source_licenses);
+
+                final WebView webView = (WebView) dialog.findViewById(R.id.web_source_licenses);
+                webView.loadUrl("file:///android_asset/source_licenses.html");
+
+                Button btn_source_licenses_close = (Button) dialog.findViewById(R.id.btn_source_licenses_close);
+                btn_source_licenses_close.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
                 break;
 
             case R.id.fab_about_share:
