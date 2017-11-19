@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(Color.argb(33, 0, 0, 0));
 
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setItemIconTintList(null);
 
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        img_main_toggle = (ImageView) findViewById(R.id.img_main_toggle);
+        drawer = findViewById(R.id.drawer_layout);
+        img_main_toggle = findViewById(R.id.img_main_toggle);
         img_main_toggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         initViewPager();
 
-        relative_main = (RelativeLayout) findViewById(R.id.relative_main);
+        relative_main = findViewById(R.id.relative_main);
         if (isShowPageStart) {
             relative_main.setVisibility(View.VISIBLE);
             showStartPage();
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void initViewPager() {
-        view_pager_main = (ViewPager) findViewById(R.id.view_pager_main);
+        view_pager_main = findViewById(R.id.view_pager_main);
 
         String[] colorList = getResources().getStringArray(R.array.colorList);
         final String[] colorListColors = getResources().getStringArray(R.array.colorListColors);

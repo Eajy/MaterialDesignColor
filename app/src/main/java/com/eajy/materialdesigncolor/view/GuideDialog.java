@@ -36,11 +36,11 @@ public class GuideDialog extends AppCompatDialog {
     }
 
     private void initView() {
-        relative_guide = (RelativeLayout) findViewById(R.id.relative_guide);
-        relative_guide_background = (RelativeLayout) findViewById(R.id.relative_guide_background);
-        tv_guide = (TextView) findViewById(R.id.tv_guide);
-        img_guide_left = (ImageView) findViewById(R.id.img_guide_left);
-        img_guide_right = (ImageView) findViewById(R.id.img_guide_right);
+        relative_guide = findViewById(R.id.relative_guide);
+        relative_guide_background = findViewById(R.id.relative_guide_background);
+        tv_guide = findViewById(R.id.tv_guide);
+        img_guide_left = findViewById(R.id.img_guide_left);
+        img_guide_right = findViewById(R.id.img_guide_right);
 
         relative_guide.setOnClickListener(new View.OnClickListener() {
             @Override

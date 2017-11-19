@@ -50,11 +50,11 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         LinearLayout linearLayout = (LinearLayout) inflater.inflate(R.layout.fragment_main, container, false);
-        relative_title = (RelativeLayout) linearLayout.findViewById(R.id.relative_title);
-        tv_header_title = (TextView) linearLayout.findViewById(R.id.tv_header_title);
-        tv_header_name = (TextView) linearLayout.findViewById(R.id.tv_header_name);
-        tv_header_value = (TextView) linearLayout.findViewById(R.id.tv_header_value);
-        recycler_main = (RecyclerView) linearLayout.findViewById(R.id.recycler_main);
+        relative_title = linearLayout.findViewById(R.id.relative_title);
+        tv_header_title = linearLayout.findViewById(R.id.tv_header_title);
+        tv_header_name = linearLayout.findViewById(R.id.tv_header_name);
+        tv_header_value = linearLayout.findViewById(R.id.tv_header_value);
+        recycler_main = linearLayout.findViewById(R.id.recycler_main);
         return linearLayout;
     }
 

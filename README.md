@@ -1,12 +1,9 @@
-#### Update logs:  
-V 1.8:  
-Greatly optimized the display on the tablet.  
-
-V 1.9:  
-Added color items in navigation view to switch color pages faster.  
-
-V 2.0:   
-Added Open Source Licenses.  
+#### Recently Updates Logs:  
+- Greatly optimized the display on the tablet.  
+- Added color items in navigation view to switch color pages faster.  
+- Added Open Source Licenses.  
+- Updated Android Studio and Gradle version.  
+- Added adaptive icon for Android O.  
 
 ---  
 

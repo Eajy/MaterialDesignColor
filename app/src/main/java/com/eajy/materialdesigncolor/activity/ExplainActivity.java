@@ -15,7 +15,7 @@ public class ExplainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explain);
 
-        Button btn_explain = (Button) findViewById(R.id.btn_explain);
+        Button btn_explain = findViewById(R.id.btn_explain);
         btn_explain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

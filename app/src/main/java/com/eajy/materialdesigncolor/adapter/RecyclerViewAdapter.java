@@ -95,9 +95,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         private RecyclerViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
-            relative_item = (RelativeLayout) itemView.findViewById(R.id.relative_item);
-            tv_recycler_name = (TextView) itemView.findViewById(R.id.tv_recycler_name);
-            tv_recycler_value = (TextView) itemView.findViewById(R.id.tv_recycler_value);
+            relative_item = itemView.findViewById(R.id.relative_item);
+            tv_recycler_name = itemView.findViewById(R.id.tv_recycler_name);
+            tv_recycler_value = itemView.findViewById(R.id.tv_recycler_value);
         }
     }
 

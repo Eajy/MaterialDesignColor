@@ -27,15 +27,15 @@ public class WebActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_web_view);
+        Toolbar toolbar = findViewById(R.id.toolbar_web_view);
         toolbar.setNavigationIcon(R.drawable.ic_close_white_24dp);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        web_view = (WebView) findViewById(R.id.web_view);
-        progress_bar_web = (ProgressBar) findViewById(R.id.progress_bar_web);
+        web_view = findViewById(R.id.web_view);
+        progress_bar_web = findViewById(R.id.progress_bar_web);
     }
 
     @Override
