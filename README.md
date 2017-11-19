@@ -25,10 +25,6 @@ https://play.google.com/store/apps/details?id=com.eajy.materialdesigncolor
 
 ![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/2.png)
 
-![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/3.png)
-
-![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/4.png)
-
 ![image](https://github.com/Eajy/MaterialDesignColor/blob/master/pictures/pad_1.png)
   
 ---  
