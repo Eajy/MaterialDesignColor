@@ -71,7 +71,6 @@ public class GuideDialog extends AppCompatDialog {
                 img_guide_right.startAnimation(alphaAnimation);
             }
         });
-
     }
 
 

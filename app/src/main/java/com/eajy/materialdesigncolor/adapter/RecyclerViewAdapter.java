@@ -8,17 +8,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.eajy.materialdesigncolor.R;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by zhang on 2016.08.07.
@@ -47,12 +41,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(final RecyclerViewHolder holder, final int position) {
         holder.setIsRecyclable(false);
 
-        holder.relative_item.setBackgroundColor(Color.parseColor(colorValues[position]));
+        holder.relative_item.setBackgroundColor(Color.parseColor(colorValues[holder.getAdapterPosition()]));
 
-        holder.tv_recycler_name.setText(colorNames[position]);
-        holder.tv_recycler_value.setText(colorValues[position]);
+        holder.tv_recycler_name.setText(colorNames[holder.getAdapterPosition()]);
+        holder.tv_recycler_value.setText(colorValues[holder.getAdapterPosition()]);
 
-        if (textColors[position].equals("White")) {
+        if (textColors[holder.getAdapterPosition()].equals("White")) {
             holder.tv_recycler_name.setTextColor(Color.WHITE);
             holder.tv_recycler_value.setTextColor(Color.WHITE);
         } else {
@@ -60,7 +54,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             holder.tv_recycler_value.setTextColor(Color.BLACK);
         }
 
-        if (position == 10) {
+        if (holder.getAdapterPosition() == 10) {
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             lp.setMargins(0, 12, 0, 0);
             holder.relative_item.setLayoutParams(lp);
@@ -71,8 +65,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public boolean onLongClick(View v) {
                 ClipboardManager cmb = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-                cmb.setText(colorValues[position]);
-                Snackbar.make(holder.mView, context.getString(R.string.copy_before) + colorValues[position] + context.getString(R.string.copy_after),
+                if (cmb != null) {
+                    cmb.setText(colorValues[holder.getAdapterPosition()]);
+                }
+                Snackbar.make(holder.mView, context.getString(R.string.copy_before) + colorValues[holder.getAdapterPosition()] + context.getString(R.string.copy_after),
                         Snackbar.LENGTH_SHORT).show();
                 return true;
             }

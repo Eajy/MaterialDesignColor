@@ -2,8 +2,6 @@ package com.eajy.materialdesigncolor.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,7 +11,6 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -23,6 +20,7 @@ import android.widget.Toast;
 
 import com.eajy.materialdesigncolor.Constant;
 import com.eajy.materialdesigncolor.R;
+import com.eajy.materialdesigncolor.util.AppUtils;
 
 public class AboutActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -64,7 +62,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         fab.setOnClickListener(this);
 
         TextView tv_about_version = findViewById(R.id.tv_about_version);
-        tv_about_version.setText(getVersionName());
+        tv_about_version.setText(AppUtils.getVersionName(this));
         tv_about_version.startAnimation(alphaAnimation);
     }
 
@@ -122,18 +120,6 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 intent.setType("text/plain");
                 startActivity(Intent.createChooser(intent, getString(R.string.share_with)));
                 break;
-        }
-    }
-
-    public String getVersionName() {
-        try {
-            PackageManager manager = this.getPackageManager();
-            PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
-            String version = info.versionName;
-            return getString(R.string.about_version) + " " + version;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "";
         }
     }
 

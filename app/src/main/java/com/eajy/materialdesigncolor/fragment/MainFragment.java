@@ -62,7 +62,7 @@ public class MainFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        //获取传递到Fragment中的参数
+        //Get the parameters passed to the Fragment
         Bundle args = getArguments();
         if (args != null) {
             title = args.getString("title");

@@ -2,7 +2,6 @@ package com.eajy.materialdesigncolor.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.net.Uri;
@@ -27,6 +26,7 @@ import com.eajy.materialdesigncolor.Constant;
 import com.eajy.materialdesigncolor.R;
 import com.eajy.materialdesigncolor.adapter.FragmentAdapter;
 import com.eajy.materialdesigncolor.fragment.MainFragment;
+import com.eajy.materialdesigncolor.util.AppUtils;
 import com.eajy.materialdesigncolor.view.GuideDialog;
 
 import java.util.ArrayList;
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RelativeLayout relative_main;
 
     private static boolean isShowPageStart = true;
+    private String[] colorListColors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(Color.argb(33, 0, 0, 0));
 
+        initView();
+        initViewPager();
+
+        relative_main = findViewById(R.id.relative_main);
+        if (isShowPageStart) {
+            relative_main.setVisibility(View.VISIBLE);
+            showStartPage();
+            isShowPageStart = false;
+        }
+    }
+
+    private void initView() {
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setItemIconTintList(null);
@@ -66,24 +79,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
-
-        initViewPager();
-
-        relative_main = findViewById(R.id.relative_main);
-        if (isShowPageStart) {
-            relative_main.setVisibility(View.VISIBLE);
-            showStartPage();
-            isShowPageStart = false;
-        }
-
     }
 
     private void initViewPager() {
-        view_pager_main = findViewById(R.id.view_pager_main);
-
+        colorListColors = getResources().getStringArray(R.array.colorListColors);
         String[] colorList = getResources().getStringArray(R.array.colorList);
-        final String[] colorListColors = getResources().getStringArray(R.array.colorListColors);
-
         String[] colorNames = getResources().getStringArray(R.array.colorNames);
 
         String[] redTextValues = (getResources().getStringArray(R.array.redTextValues));
@@ -147,40 +147,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fragments.add(new MainFragment().newInstance(colorList[18], colorNames, blueGreyTextValues, blueGreyTextColors));
 
         FragmentAdapter mFragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragments);
+        view_pager_main = findViewById(R.id.view_pager_main);
         view_pager_main.setAdapter(mFragmentAdapter);
-
-        view_pager_main.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                if (colorListColors[position].equals("White")) {
-                    img_main_toggle.setImageTintList(ColorStateList.valueOf(Color.WHITE));
-                } else {
-                    img_main_toggle.setImageTintList(ColorStateList.valueOf(Color.BLACK));
-                }
-
-                navigationView.getMenu().getItem(position).setChecked(true);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
+        view_pager_main.addOnPageChangeListener(pageChangeListener);
     }
 
-    @Override
-    public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+    private ViewPager.OnPageChangeListener pageChangeListener = new ViewPager.OnPageChangeListener() {
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
         }
-    }
+
+        @Override
+        public void onPageSelected(int position) {
+            if (colorListColors[position].equals("White")) {
+                img_main_toggle.setImageTintList(ColorStateList.valueOf(Color.WHITE));
+            } else {
+                img_main_toggle.setImageTintList(ColorStateList.valueOf(Color.BLACK));
+            }
+
+            navigationView.getMenu().getItem(position).setChecked(true);
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
+
+        }
+    };
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -246,11 +239,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_explain:
-                intent.setClass(MainActivity.this, ExplainActivity.class);
+                intent.setClass(this, ExplainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.nav_website:
-                intent.setClass(MainActivity.this, WebActivity.class);
+                intent.setClass(this, WebActivity.class);
                 startActivity(intent);
                 break;
 
@@ -264,9 +257,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_md:
-                if (checkAppInstalled(Constant.MATERIAL_DESIGN_DEMO_PACKAGE)) {
+                if (AppUtils.checkAppInstalled(this, Constant.MATERIAL_DESIGN_DEMO_PACKAGE)) {
                     intent = getPackageManager().getLaunchIntentForPackage(Constant.MATERIAL_DESIGN_DEMO_PACKAGE);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    if (intent != null) {
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    }
                     startActivity(intent);
                 } else {
                     intent.setData(Uri.parse(Constant.MATERIAL_DESIGN_DEMO_URL));
@@ -347,12 +342,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .show();
     }
 
-    private boolean checkAppInstalled(String packageName) {
-        try {
-            getPackageManager().getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
+    @Override
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
         }
     }
 
