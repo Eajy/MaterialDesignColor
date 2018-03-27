@@ -37,7 +37,7 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:progressBackgroundTint="@color/transparent"
-            android:layout_height="4dp" />
+            android:layout_height="3dp" />
     </FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>

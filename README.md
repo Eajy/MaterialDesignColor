@@ -1,10 +1,4 @@
-#### Recently Updates Logs:  
-- Greatly optimized the display on the tablet.  
-- Added color items in navigation view to switch color pages faster.  
-- Added Open Source Licenses.  
-- Updated Android Studio and Gradle version.  
-- Added adaptive icon for Android O.  
-
+  
 ---  
 
 **Color**  
@@ -30,6 +24,8 @@ https://play.google.com/store/apps/details?id=com.eajy.materialdesigncolor
 ---  
 
 #### Open Source Licenses:  
+    Copyright 2016 Eajy  
+      
     The product includes:  
       
     Apache License, Version 2.0  
