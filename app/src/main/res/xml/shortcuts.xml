@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:icon="@mipmap/ic_shortcut_about_color"
+        android:shortcutId="shortcut_about_color"
+        android:shortcutShortLabel="@string/shortcut_label_about_color">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.eajy.materialdesigncolor.activity.ExplainActivity"
+            android:targetPackage="com.eajy.materialdesigncolor" />
+    </shortcut>
+
+    <shortcut
+        android:icon="@mipmap/ic_shortcut_about"
+        android:shortcutId="shortcut_about"
+        android:shortcutShortLabel="@string/shortcut_label_about">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.eajy.materialdesigncolor.activity.AboutActivity"
+            android:targetPackage="com.eajy.materialdesigncolor" />
+    </shortcut>
+
+</shortcuts>
