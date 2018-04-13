@@ -44,4 +44,4 @@ https://play.google.com/store/apps/details?id=com.eajy.materialdesigncolor
     Copyright © Google, Inc. All rights reserved.  
     https://material.io/guidelines/
   
-_**- Designed by Eajy in China.**_
+[_**- Designed by Eajy in China.**_](https://sites.google.com/view/eajy)
