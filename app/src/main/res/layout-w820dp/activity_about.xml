@@ -9,9 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
-        android:textColor="@color/gray_light"
         android:padding="@dimen/text_margin_small"
-        android:text="@string/app_designed_by" />
+        android:text="@string/app_designed_by"
+        android:textColor="@color/gray_very_light"
+        android:textSize="12sp" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_about"
@@ -28,8 +29,8 @@
 
         <LinearLayout
             android:layout_width="800dp"
-            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
             <include layout="@layout/card_about_1" />

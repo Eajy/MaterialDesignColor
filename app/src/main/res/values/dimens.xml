@@ -5,6 +5,8 @@
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">72dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="my_app_bar_height">128dp</dimen>
+    <dimen name="my_app_bar_overlap">56dp</dimen>
 
     <dimen name="text_margin">16dp</dimen>
     <dimen name="text_margin_small">8dp</dimen>

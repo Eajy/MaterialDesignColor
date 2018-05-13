@@ -256,18 +256,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
 
-            case R.id.nav_md:
-                if (AppUtils.checkAppInstalled(this, Constant.MATERIAL_DESIGN_DEMO_PACKAGE)) {
-                    intent = getPackageManager().getLaunchIntentForPackage(Constant.MATERIAL_DESIGN_DEMO_PACKAGE);
-                    if (intent != null) {
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    }
-                    startActivity(intent);
-                } else {
-                    intent.setData(Uri.parse(Constant.MATERIAL_DESIGN_DEMO_URL));
-                    intent.setAction(Intent.ACTION_VIEW);
-                    startActivity(intent);
-                }
+            case R.id.nav_my_app:
+                intent.setClass(this, MyAppsActivity.class);
+                startActivity(intent);
                 break;
         }
 

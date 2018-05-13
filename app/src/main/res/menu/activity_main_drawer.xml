@@ -101,15 +101,10 @@
             android:id="@+id/nav_donate"
             android:icon="@drawable/ic_monetization_on_black_24dp"
             android:title="@string/nav_donate" />
+        <item
+            android:id="@+id/nav_my_app"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="@string/nav_my_apps" />
     </group>
-
-    <item android:title="@string/nav_my_apps">
-        <menu>
-            <item
-                android:id="@+id/nav_md"
-                android:icon="@drawable/material_design_demo"
-                android:title="@string/nav_md" />
-        </menu>
-    </item>
 
 </menu>

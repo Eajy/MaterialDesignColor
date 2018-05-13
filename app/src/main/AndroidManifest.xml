@@ -43,6 +43,10 @@
             android:label="@string/activity_donate"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.MyAppsActivity"
+            android:label="@string/activity_my_apps"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
