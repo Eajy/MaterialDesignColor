@@ -18,6 +18,7 @@
     <dimen name="fragment_header_height">144dp</dimen>
 
     <dimen name="main_card_margin_horizontal">8dp</dimen>
+    <dimen name="my_apps_card_margin_horizontal">16dp</dimen>
     <dimen name="main_card_margin_vertical">8dp</dimen>
 
     <dimen name="card_title_margin_top">24dp</dimen>

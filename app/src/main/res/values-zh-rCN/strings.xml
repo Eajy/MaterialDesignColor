@@ -78,7 +78,6 @@
 
     <!-- String related to Ad -->
     <string name="banner_ad_loading">广告加载中 …</string>
-    <string name="banner_ad_unit_id_donate">ca-app-pub-1251484082745159/7804400621</string>
 
     <!-- String related to My Apps -->
     <string name="activity_my_apps">我的应用</string>

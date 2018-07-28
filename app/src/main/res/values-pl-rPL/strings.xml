@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Color</string>
+    <string name="app_full_name">Material Design Color</string>
+    <string name="app_designed_by">Stworzona przez Eajy w Chinach</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_explain">O programie Color</string>
+    <string name="nav_website">Strona programu Material Color</string>
+    <string name="nav_my_apps">Moje Aplikacje</string>
+    <string name="nav_about">O aplikacji</string>
+    <string name="nav_donate">Darowizny</string>
+    <string name="main_feedback_email">Opinie:MaterialDesignColor</string>
+    <string name="main_not_found_email">Nie znaleziono aplikacji E-mail</string>
+    <string name="guide_swipe">Przeciągnij by zobaczyć więcej</string>
+
+    <string name="nav_red">Czerwony</string>
+    <string name="nav_pink">Różowy</string>
+    <string name="nav_purple">Fioletowy</string>
+    <string name="nav_deep_purple">Ciemny Fioletowy</string>
+    <string name="nav_indigo">Indygo</string>
+    <string name="nav_blue">Niebieski</string>
+    <string name="nav_light_blue">Jasny Niebieski</string>
+    <string name="nav_cyan">Turkusowy</string>
+    <string name="nav_teal">Morski</string>
+    <string name="nav_green">Zielony</string>
+    <string name="nav_light_green">Jasny Zielony</string>
+    <string name="nav_lime">Limonkowy</string>
+    <string name="nav_yellow">Żółty</string>
+    <string name="nav_amber">Bursztynowy</string>
+    <string name="nav_orange">Pomarańczowy</string>
+    <string name="nav_deep_orange">Ciemny Pomarańcz</string>
+    <string name="nav_brown">Brązowy</string>
+    <string name="nav_grey">Szary</string>
+    <string name="nav_blue_grey">Szaro-niebieski</string>
+
+    <string name="copy_before">Skopiowano"</string>
+    <string name="copy_after">\" do schowka</string>
+    <string name="copy_guide">Przytrzymaj dłużej by skopiować wartość koloru do schowka</string>
+    <string name="copy_ok">Skopiowano</string>
+
+    <!-- String related to About Color -->
+    <string name="explain_color">Color</string>
+    <string name="explain_color_details">Color in material design jest inspirowana odważnymi barwami zestawionymi ze stonowanymi odcieniami, głębokimi tonacjami i jasnymi akcentami.</string>
+    <string name="explain_color_palette">Paleta Kolorów</string>
+    <string name="explain_color_palette_details">Ta paleta kolorów zawiera kolory podstawowe oraz ich odcienie, które można wykorzystać do tworzenia ilustracji lub odtwarzania znanych kolorów. 
+        Zostały zaprojektowane, aby harmonijnie współgrać ze sobą. Paleta kolorów rozpoczyna się od kolorów podstawowych z ich odcieniami, tworząc kompletną i użyteczną paletę dla Androida, stron WWW i iOS. Google zaleca używanie koloru nr 500 jako kolorów podstawowego w aplikacjach, a jego odcieni jako ozdobników.\n\nMotywy umożliwiają logiczną stylizację aplikacji poprzez odcienie powierzchni, głębię cieni i przezroczystość barw.
+    </string>
+    <string name="explain_btn">Strona Material Color</string>
+
+    <!-- String related to About -->
+    <string name="title_activity_about">O aplikacji</string>
+    <string name="about_version">Wersja: </string>
+    <string name="about_email_intent">O aplikacji:MaterialDesignColor</string>
+    <string name="about_not_found_email">Nie odnaleziono aplikacji E-mail</string>
+    <string name="about_card1_message">Cześć, miło Cię widzieć!</string>
+    <string name="about_card2_title">Jeśli polubiłeś naszą aplikacę, napisz do mnie.</string>
+    <string name="about_google_play">Oceń na Google play</string>
+    <string name="about_email">Napisz do nas E-mail</string>
+    <string name="about_git_hub">Kod źródłowy na GitHub</string>
+    <string name="about_address">Beijing, Chiny</string>
+    <string name="about_website">Odwiedź moją stronę</string>
+    <string name="web_view_menu">Otwórz w przeglądarce</string>
+    <string name="about_source_licenses">Licencja typu open source</string>
+    <string name="share_with">Podziel się</string>
+    <string name="dialog_close">Zamknij</string>
+
+    <!-- String related to Donate -->
+    <string name="activity_donate">Wsparcie</string>
+    <string name="donate">Wesprzyj</string>
+    <string name="donated">Wsparto</string>
+    <string name="donate_title">Będę bardzo wdzięczny za Twoje wsparcie!</string>
+    <string name="donate_title_after">Dziękuję za Twoje wsparcie, jestem bardzo wdzięczny!</string>
+    <string name="donate_low">1.99 USD</string>
+    <string name="donate_high">9.99 USD</string>
+    <string name="donate_exception">Przepraszam, nie mogę tego wykonać!</string>
+
+    <!-- String related to Ad -->
+    <string name="banner_ad_loading">Ładowanie reklam...</string>
+
+    <!-- String related to app short cuts -->
+    <string name="shortcut_label_about_color">O aplikacji Color</string>
+    <string name="shortcut_label_about">O mnie</string>
+
+    <!-- String related to My Apps -->
+    <string name="activity_my_apps">Moje aplikacje</string>
+</resources>
