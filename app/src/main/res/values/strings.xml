@@ -78,7 +78,6 @@
 
     <!-- String related to Ad -->
     <string name="banner_ad_loading">Ads loading …</string>
-    <string name="banner_ad_unit_id_donate" translatable="false">ca-app-pub-1251484082745159/7804400621</string>
 
     <!-- String related to app short cuts -->
     <string name="shortcut_label_about_color">About Color</string>
