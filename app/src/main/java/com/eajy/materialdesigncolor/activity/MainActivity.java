@@ -28,6 +28,7 @@ import com.eajy.materialdesigncolor.adapter.FragmentAdapter;
 import com.eajy.materialdesigncolor.fragment.MainFragment;
 import com.eajy.materialdesigncolor.util.AppUtils;
 import com.eajy.materialdesigncolor.view.GuideDialog;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MobileAds.initialize(this, getString(R.string.admob_app_id));
 
         Window window = getWindow();
         window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
