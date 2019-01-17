@@ -3,9 +3,6 @@
     <string name="app_full_name">Material Design Color</string>
     <string name="app_designed_by">Designed by Eajy in China</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="nav_explain">说明</string>
     <string name="nav_website">Material Color 网站</string>
     <string name="nav_my_apps">我的应用</string>
@@ -78,6 +75,10 @@
 
     <!-- String related to Ad -->
     <string name="banner_ad_loading">广告加载中 …</string>
+
+    <!-- String related to app short cuts -->
+    <string name="shortcut_label_about_color">Color</string>
+    <string name="shortcut_label_about">关于</string>
 
     <!-- String related to My Apps -->
     <string name="activity_my_apps">我的应用</string>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Color</string>
+    <string name="app_full_name">Material Design Color</string>
+    <string name="app_designed_by">Designed by Eajy in China</string>
+
+    <string name="nav_explain">چۈشەندۈرۈلۈشى</string>
+    <string name="nav_website">ـ Material Color تور بېكىتى</string>
+    <string name="nav_my_apps">ئەپلىرىم</string>
+    <string name="nav_about">ھەققىدە</string>
+    <string name="nav_donate">تارتۇقلاش</string>
+    <string name="main_feedback_email">پىكىر بىرىش:MaterialDesignColor</string>
+    <string name="main_not_found_email">پوچتا يوللانمىسى پروگراممىسى يوق</string>
+    <string name="guide_swipe">سىيرىپ كۆپلەپ كۆرۈڭ</string>
+
+    <string name="nav_red">قىزىل رەڭ</string>
+    <string name="nav_pink">ھال رەڭ</string>
+    <string name="nav_purple">سۆسۈن رەڭ</string>
+    <string name="nav_deep_purple">بىنەپشە رەڭ</string>
+    <string name="nav_indigo">قارا كۆك رەڭ</string>
+    <string name="nav_blue">كۆك رەڭ</string>
+    <string name="nav_light_blue">سۇس كۆك رەڭ</string>
+    <string name="nav_cyan">مايسا رەڭ</string>
+    <string name="nav_teal">قېنىق كۆك رەڭ</string>
+    <string name="nav_green">يېشىل رەڭ</string>
+    <string name="nav_light_green">سۇس يېشىل رەڭ</string>
+    <string name="nav_lime">لىمون رەڭ</string>
+    <string name="nav_yellow">سېرىق رەڭ</string>
+    <string name="nav_amber">كەھرىۋا رەڭ</string>
+    <string name="nav_orange">قىزغۇچ سېرىق رەڭ</string>
+    <string name="nav_deep_orange">توق قىزغۇچ سېرىق رەڭ</string>
+    <string name="nav_brown">قوڭۇر رەڭ</string>
+    <string name="nav_grey">كۈلرەڭ</string>
+    <string name="nav_blue_grey">كۆكۈچ كۈلرەڭ</string>
+
+    <string name="copy_before">نۇسخىلاندى \"</string>
+    <string name="copy_after">\" چاپلاش تاختىسىغا</string>
+    <string name="copy_guide">ئۇزۇن بېسىپ رەڭ قىممىتىنى نۇسخىلاپ، چاپلاش تاختىسىغا چاپلاڭ</string>
+    <string name="copy_ok">جەزىملەشتۈرۈش</string>
+
+    <!-- String related to Explain -->
+    <string name="explain_color">Color</string>
+    <string name="explain_color_details">Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights.</string>
+    <string name="explain_color_palette">Color Palette</string>
+    <string name="explain_color_palette_details">This color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors.
+        They’ve been designed to work harmoniously with each other. The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS.
+        Google suggests using the 500 colors as the primary colors in your app and the other colors as accents colors.\n\nThemes enable consistent app styling through surface shades, shadow depth, and ink opacity.</string>
+    <string name="explain_btn">ـ Material Color تور بېكىتى</string>
+
+    <!-- String related to About -->
+    <string name="title_activity_about">ھەققىدە</string>
+    <string name="about_version">نەشرى: </string>
+    <string name="about_email_intent">ھەققىدە:MaterialDesignColor</string>
+    <string name="about_not_found_email">پوچتا يوللانمىسى پروگراممىسى يوق</string>
+    <string name="about_card1_message">ئوۋ! سىز بىلەن تۇنۇشقىنىمدىن ناھايتى خوشالمەن!</string>
+    <string name="about_card2_title">ئەگەر سىز بۇ Demo نى ياقتۇرسىڭىز، مەن بىلەن ئالاقىلىشىڭ!</string>
+    <string name="about_google_play">باھا بىرىش (Google play)</string>
+    <string name="about_email">پىكىر بىرىش (E-mail)</string>
+    <string name="about_git_hub">مەنبە كودى (GitHub)</string>
+    <string name="about_address">Beijing, China</string>
+    <string name="about_website">تور بېكىتىم</string>
+    <string name="web_view_menu">تور كۆرگۈچتە ئېچىش</string>
+    <string name="about_source_licenses">ئوچۇق كود ئىجازىتى</string>
+    <string name="share_with">ھەمبەھىرلەش ئۇسۇلى</string>
+    <string name="dialog_close">تاقاش</string>
+
+    <!-- String related to Donate -->
+    <string name="activity_donate">تارتۇقلاش</string>
+    <string name="donate">تارتۇقلاش</string>
+    <string name="donated">تارتۇقلاندى</string>
+    <string name="donate_title">ئەگەر مېنى تارتۇقلىسىڭىز، سىزدىن ناھايتى خۇرسەن بولغان بولاتتىم!</string>
+    <string name="donate_title_after">تارتۇقلىغىنىڭىزغا كۆپتىن-كۆپ رەھمەت!</string>
+    <string name="donate_low">1.99 ئامېرىكا دوللىرى</string>
+    <string name="donate_high">9.99 ئامېرىكا دوللىرى</string>
+    <string name="donate_exception">كەچۈرۈڭ، مەشغۇلات قىلغىلى بولمىدى!</string>
+
+    <!-- String related to Ad -->
+    <string name="banner_ad_loading">ئېلان يۈكلىنىۋاتىدۇ …</string>
+
+    <!-- String related to app short cuts -->
+    <string name="shortcut_label_about_color">چۈشەندۈرۈلۈشى</string>
+    <string name="shortcut_label_about">ھەققىدە</string>
+
+    <!-- String related to My Apps -->
+    <string name="activity_my_apps">ئەپلىرىم</string>
+</resources>

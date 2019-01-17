@@ -3,8 +3,8 @@
     <string name="app_full_name">Material Design Color</string>
     <string name="app_designed_by">Designed by Eajy in China</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
     <string name="nav_explain">About Color</string>
     <string name="nav_website">Material Color Website</string>

@@ -3,9 +3,6 @@
     <string name="app_full_name">Material Design Color</string>
     <string name="app_designed_by">Stworzona przez Eajy w Chinach</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="nav_explain">O programie Color</string>
     <string name="nav_website">Strona programu Material Color</string>
     <string name="nav_my_apps">Moje Aplikacje</string>
