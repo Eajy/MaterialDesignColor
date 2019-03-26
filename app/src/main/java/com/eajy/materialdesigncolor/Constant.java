@@ -14,7 +14,7 @@ public class Constant {
 
     public static String GOOGLE_COLOR_WEBSITE = "https://material.io/guidelines/style/color.html#";
 
-    public static String MATERIAL_DESIGN_DEMO = "Material Design Demo";
+    public static String MATERIAL_DESIGN_DEMO = "Material Design";
     public static String MATERIAL_DESIGN_DEMO_DESCRIPTION = "A beautiful app designed with Material Design.";
     public static String MATERIAL_DESIGN_DEMO_URL = "https://play.google.com/store/apps/details?id=com.eajy.materialdesigndemo";
     public static String MATERIAL_DESIGN_DEMO_PACKAGE = "com.eajy.materialdesigndemo";
@@ -34,9 +34,13 @@ public class Constant {
     public static String X_LAUNCHER_URL = "https://play.google.com/store/apps/details?id=com.eajy.launcher";
     public static String X_LAUNCHER_PACKAGE = "com.eajy.launcher";
 
-    public static String ALL_MESSENGER = "All Messenger";
+    public static String ALL_MESSENGER = "All Messengers";
     public static String ALL_MESSENGER_DESCRIPTION = "Messengers all in one.";
     public static String ALL_MESSENGER_URL = "https://play.google.com/store/apps/details?id=messenger.all.messengerall";
     public static String ALL_MESSENGER_PACKAGE = "messenger.all.messengerall";
 
+    public static String GAME_2048 = "2048 Game";
+    public static String GAME_2048_DESCRIPTION = "Classic game - 2048";
+    public static String GAME_2048_URL = "https://play.google.com/store/apps/details?id=com.eajy.game.game2048";
+    public static String GAME_2048_PACKAGE = "com.eajy.game.game2048";
 }
