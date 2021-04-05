@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MaterialDesignColor.iml" filepath="$PROJECT_DIR$/MaterialDesignColor.iml" group="MaterialDesignColor" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MaterialDesignColor/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MaterialDesignColor.iml" filepath="$PROJECT_DIR$/.idea/MaterialDesignColor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MaterialDesignColor.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MaterialDesignColor.app.iml" />
     </modules>
   </component>
 </project>
